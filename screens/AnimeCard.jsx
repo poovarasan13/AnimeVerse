@@ -9,7 +9,7 @@ const AnimeCard = ({ character,navigation }) => {
     navigation.push('AnimeDetails',{character})
    }
   return (
-    <TouchableOpacity 
+    <TouchableOpacity
       activeOpacity={0.9}
       style={{
         width: CARD_WIDTH,
@@ -20,15 +20,16 @@ const AnimeCard = ({ character,navigation }) => {
         shadowOpacity: 0.3,
         shadowRadius: 20,
         elevation: 10,
+        marginVertical:10
       }}
       onPress={()=>handleView(character)}
     >
       <View
        
-        className="rounded-lg h-full overflow-hidden p-1"
+        className="rounded-lg h-full overflow-hidden p-1 "
       >
         <View className="bg-orange-500 rounded-[16px] h-full w-full overflow-hidden">
-          <View className="items-center mt-6">
+          <View className="items-center mt-2">
             <View
              
               className="w-44 h-44 rounded-full justify-center items-center  border-4 border-white"
